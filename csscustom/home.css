@@ -1,0 +1,93 @@
+.card.no-border {
+    border: none;
+}
+.card.full-width {
+    width: 100%;
+    max-height: 200px;
+    cursor: pointer;
+    position: relative;
+}
+.kt {
+    overflow: hidden;
+    max-height: 50px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    box-orient: vertical;
+    text-overflow: ellipsis;
+}
+.ct {
+    overflow: hidden;
+    max-height: 100px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    box-orient: vertical;
+    text-overflow: ellipsis;
+}
+.cb p {
+    margin: 0;
+}
+.cs {
+    overflow: hidden;
+    max-height: 100px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    box-orient: vertical;
+    text-overflow: ellipsis;
+}
+.icon {
+    margin-left: 10px;
+    vertical-align: middle;
+
+    
+}
+.icon svg {
+    width: 16px;
+    height: 16px;
+    fill: #a1a1a1;
+}
+.hearta {
+    position:absolute;
+    z-index: 999;
+}
+.hearta {
+    font-family: "Font Awesome 6 Free";
+    content: "\f118"; display: inline-block;
+    font-weight: 900; color: red;
+    animation: grow 1s ease-out forwards;
+}
+.heart {
+    position:absolute;
+    z-index: 999;
+}
+.heart::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f004"; display: inline-block;
+    font-weight: 900; color: red;
+    animation: grow 1s ease-out forwards;
+}
+@keyframes grow {
+    to {transform: scale(10); opacity: 0;}
+}
+
+
+.ct {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-url {
+    color: black;
+    text-decoration: none; /* Tıklanma görünümünü kaldırır */
+}
+
+.card-url:hover {
+    color: #808080; /* Üzerine gelince hafif gri */
+}
+

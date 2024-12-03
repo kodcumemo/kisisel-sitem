@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #343a40;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212529;
+    padding: 0px 20px;
+    position: relative;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    display: none;
+    font-size: 1.5em;
+    border: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-nav li {
+    margin: 0 10px;
+}
+
+.navbar-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.5s ease;
+}
+
+.navbar-nav a:hover {
+    color: red;
+}
+.btnprofile:hover {
+background-color: rgb(87, 7, 7);
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #9b9b9b;
+        position: relative;
+        top: 20px;
+        left: 0;
+        transition: max-height 1.9s ease;
+    }
+    /* {
+        .navbar-nav {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background-color: #212529;
+            position: relative;
+            top: 50px;
+            left: 0;
+            max-height: 0;
+            /*overflow: hidden;*/
+           /* transition: max-height 0.5s ease-out;
+        } */
+
+    .navbar-nav li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-toggler.active + .navbar-nav {
+        display: flex;
+    }
+}
+
+.aaa {
+    color: #212529;
+}
+
+.tred {
+    color: red;
+}
+
+.kline {
+    width: 100%;
+    height: 2px;
+    background-color: red;
+}
+
+/* Yeni eklenen CSS */
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #212529;
+    padding: 10px;
+    left: 0;
+    top: 100%;
+    width: 100%;
+}
+
+.navbar-nav li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin: 0;
+}
+
+.sub-menu li a {
+    display: block;
+    padding: 5px 10px;
+}
+
+.sub-menu li a:hover {
+    background-color: red;
+    color: white;
+}
+.top-div {
+position: static;
+top: 0;
+left: 0;
+width: 100%;
+/*  background-color: #f00; /* Arka plan rengi, değiştirebilirsiniz */
+/*  color: #fff; /* Yazı rengi, isteğe bağlı olarak ayarlayabilirsiniz */
+padding: 20px; /* İçerik aralığı, gereksinimlerinize göre değiştirin */
+/*  box-sizing: border-box; /* padding'lerin ve kenar boşluklarının genişliği ile birlikte toplam genişlik / yükseklik belirtin */
+}

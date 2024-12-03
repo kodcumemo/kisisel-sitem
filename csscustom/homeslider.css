@@ -1,0 +1,43 @@
+
+
+/* -------- */
+
+/* Container ayarları */
+.container {
+    overflow: hidden;
+  }
+  
+  /* Row ayarları */
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Slider ayarları */
+  .slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Slides ayarları */
+  .slide {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Slide ayarları */
+  .slides {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Resimlerin boyut ayarları */
+  .slide img {
+    background-color: black;
+    display: block;
+    width: 10%;
+    height: auto;
+    max-height: 400px; /* Burada maks yüksekliği belirleyin */
+  }
+  
